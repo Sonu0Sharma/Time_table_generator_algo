@@ -1,0 +1,385 @@
+/* --- Global Styles & Variables --- */
+:root {
+    --primary-color: #6a11cb;
+    --secondary-color: #2575fc;
+    --text-color: #333;
+    --bg-color: #ffffff;
+    --card-bg: #f8f9fa;
+    --white-space: 20px;
+    --shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* --- Authentication Page Styles --- */
+#auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+}
+
+.auth-box {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-sizing: border-box;
+    margin: var(--white-space);
+}
+
+.auth-box h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: var(--text-color);
+}
+
+.auth-box input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.auth-box p {
+    margin-top: 20px;
+    color: #666;
+}
+
+.auth-box a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.message {
+    margin-top: 15px;
+    font-weight: bold;
+    min-height: 20px;
+}
+
+.message.success { color: green; }
+.message.error { color: red; }
+
+/* --- Main Application Styles --- */
+header {
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 1rem var(--white-space);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#logout-button {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: calc(2 * var(--white-space));
+}
+
+#generator-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.generator-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: calc(2 * var(--white-space));
+}
+
+.input-section, .output-section {
+    background: var(--card-bg);
+    padding: var(--white-space);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.input-section h3, .output-section h3 {
+    margin-top: 0;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+}
+
+#timetable-form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+#timetable-form input, #timetable-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+#timetable-form button {
+    margin-top: 20px;
+    width: 100%;
+}
+
+#timetable-options {
+    border: 1px dashed #ccc;
+    padding: var(--white-space);
+    min-height: 200px;
+    border-radius: 10px;
+    background: white;
+}
+
+.cta-button {
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-weight: 600;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+    .generator-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* --- New Logo Styles --- */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.logo img {
+    height: 40px; /* Adjust size as needed */
+}
+
+/* --- New File Input Styles --- */
+#timetable-form input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+
+/* --- Circular Logo Style --- */
+.logo img {
+    height: 40px; /* Keep the height */
+    width: 40px;  /* Set a matching width to make it a square */
+    border-radius: 50%; /* This is the magic property that makes it a circle */
+    object-fit: cover;  /* Prevents the image from being squished or distorted */
+    border: 2px solid white; /* Optional: Adds a nice premium-looking white border */
+}
+
+/* --- New Timetable Table Styles --- */
+.timetable-option-container {
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.timetable-table-wrapper {
+    overflow-x: auto; /* Makes table scrollable on small screens */
+}
+
+.timetable-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.timetable-table th, .timetable-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    min-width: 120px;
+}
+
+.timetable-table th {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+}
+
+.timetable-table td .subject {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+.timetable-table td .faculty {
+    font-size: 12px;
+    color: #555;
+}
+.timetable-table td .room {
+    font-size: 12px;
+    color: #777;
+    font-style: italic;
+}
+
+.timetable-table .lunch {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    color: #888;
+}
+
+.export-buttons {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.export-buttons button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid var(--primary-color);
+    background-color: white;
+    color: var(--primary-color);
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.export-buttons button:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+
+/* --- Simple File Upload Status Styles --- */
+.input-group {
+    margin-bottom: 20px;
+}
+
+#timetable-form input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.upload-status {
+    font-size: 20px; /* Makes the checkmark emoji bigger */
+    margin-left: 10px;
+    color: green;
+}
+
+/* --- New Option Card Selection Styles --- */
+#option-selection-view {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px; /* Provides space between cards */
+}
+
+.option-card {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: white;
+    padding: 50px 40px;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    flex-grow: 1;
+    min-width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.option-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* --- New Detailed View Header Styles --- */
+.detailed-view-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.back-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid #888;
+    background-color: #f0f0f0;
+    color: #333;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.back-btn:hover {
+    background-color: #ddd;
+}

@@ -1,0 +1,92 @@
+branch,subject,hours_per_week,is_lab
+CSE-1,Foundations of Programming,4,0
+CSE-1,Linear Algebra,4,0
+CSE-1,Physics for Computing,3,0
+CSE-1,Digital Logic,3,0
+CSE-1,Professional Communication,2,0
+CSE-1,Digital Logic Lab,2,1
+CSE-2,Data Structures & Algorithms,4,0
+CSE-2,Advanced Calculus,4,0
+CSE-2,Computer Architecture,3,0
+CSE-2,Object Oriented Design,3,0
+CSE-2,Environmental Science,2,0
+CSE-2,Data Structures Lab,2,1
+CSE-3,Operating Systems,4,0
+CSE-3,Database Systems,4,0
+CSE-3,Design & Analysis of Algorithms,4,0
+CSE-3,Formal Languages & Automata,3,0
+CSE-3,Software Engineering Principles,3,0
+CSE-3,Database Systems Lab,2,1
+CSE-4,Machine Learning Foundations,4,0
+CSE-4,Distributed Systems,4,0
+CSE-4,Cryptography & Network Security,4,0
+CSE-4,AI & Knowledge Representation,3,0
+CSE-4,Major Project,6,1
+ECE-1,Basic Electronics,4,0
+ECE-1,Linear Algebra,4,0
+ECE-1,Chemistry,3,0
+ECE-1,Engineering Mechanics,3,0
+ECE-1,Professional Communication,2,0
+ECE-1,Basic Electronics Lab,2,1
+ECE-2,Analog Electronic Circuits,4,0
+ECE-2,Signals & Systems,4,0
+ECE-2,Network Analysis,3,0
+ECE-2,Electromagnetic Theory,3,0
+ECE-2,Data Structures & Algorithms,3,0
+ECE-2,Analog Circuits Lab,2,1
+ECE-3,Digital Signal Processing,4,0
+ECE-3,Microprocessors & Microcontrollers,4,0
+ECE-3,Control System Engineering,4,0
+ECE-3,Information Theory & Coding,3,0
+ECE-3,Antenna & Wave Propagation,3,0
+ECE-3,Microprocessors Lab,2,1
+ECE-4,VLSI Design,4,0
+ECE-4,Wireless & Mobile Communication,4,0
+ECE-4,Embedded Systems Design,4,0
+ECE-4,Optical Networks,3,0
+ECE-4,Major Project,6,1
+ME-1,Thermodynamics,4,0
+ME-1,Linear Algebra,4,0
+ME-1,Chemistry,3,0
+ME-1,Engineering Drawing,3,1
+ME-1,Workshop Technology,3,1
+ME-2,Fluid Mechanics,4,0
+ME-2,Strength of Materials,4,0
+ME-2,Theory of Machines I,3,0
+ME-2,Manufacturing Technology,3,0
+ME-2,Material Science & Metallurgy,3,0
+ME-2,Fluid Mechanics Lab,2,1
+ME-3,Heat & Mass Transfer,4,0
+ME-3,Machine Design I,4,0
+ME-3,Dynamics of Machinery,4,0
+ME-3,IC Engines & Gas Turbines,3,0
+ME-3,Metrology & Quality Control,3,0
+ME-3,Heat Transfer Lab,2,1
+ME-4,Refrigeration & Air Conditioning,4,0
+ME-4,Finite Element Methods,4,0
+ME-4,Robotics & Automation,4,0
+ME-4,CAD & CAM,3,1
+ME-4,Major Project,6,1
+CV-1,Surveying,4,0
+CV-1,Linear Algebra,4,0
+CV-1,Engineering Geology,3,0
+CV-1,Building Materials & Construction,3,0
+CV-1,Engineering Drawing,3,1
+CV-1,Surveying Lab,2,1
+CV-2,Structural Analysis I,4,0
+CV-2,Fluid Mechanics,4,0
+CV-2,Concrete Technology,3,0
+CV-2,Transportation Engineering I,3,0
+CV-2,Geomatics,3,0
+CV-2,Concrete Lab,2,1
+CV-3,Steel Design,4,0
+CV-3,Geotechnical Engineering,4,0
+CV-3,Foundation Engineering,4,0
+CV-3,Environmental Engineering,3,0
+CV-3,Hydrology & Water Resources,3,0
+CV-3,Geotechnical Lab,2,1
+CV-4,Irrigation & Hydraulic Structures,4,0
+CV-4,Earthquake Resistant Design,4,0
+CV-4,Construction Planning & Management,4,0
+CV-4,Bridge Engineering,3,0
+CV-4,Major Project,6,1

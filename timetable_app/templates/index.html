@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeWise - AI Timetable Generator</title>
+    <!-- Add the favicon -->
+    <link rel="icon" href="{{ url_for('static', filename='assets/timewise_logo.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Authentication Section (Stays the same) -->
+    <div id="auth-container">
+        <div class="auth-box">
+            <div id="login-form">
+                <h2>Admin Login</h2>
+                <input type="email" id="login-email" placeholder="Email" required>
+                <input type="password" id="login-password" placeholder="Password" required>
+                <button id="login-button" class="cta-button">Login</button>
+                <p>Don't have an account? <a href="#" id="show-signup">Sign Up</a></p>
+            </div>
+            <div id="signup-form" class="hidden">
+                <h2>Admin Sign Up</h2>
+                <input type="text" id="signup-name" placeholder="Full Name" required>
+                <input type="email" id="signup-email" placeholder="Email" required>
+                <input type="password" id="signup-password" placeholder="Password" required>
+                <button id="signup-button" class="cta-button">Sign Up</button>
+                <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+            </div>
+            <p id="auth-message" class="message"></p>
+        </div>
+    </div>
+
+    <!-- Main Application (Updated) -->
+    <div id="main-app" class="hidden">
+        <header>
+            <nav>
+                <!-- Updated Logo Section -->
+                <div class="logo">
+                    <img src="{{ url_for('static', filename='assets/timewise_logo.png') }}" alt="TimeWise Logo">
+                    <span>TimeWise</span>
+                </div>
+                <div class="nav-right">
+                    <span id="admin-name"></span>
+                    <button id="logout-button">Logout</button>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section id="generator-section">
+                <h2>Timetable Generator</h2>
+                <div class="generator-container">
+                    <div class="input-section">
+                        <h3>1. Upload Data Files</h3>
+                        <!-- Updated Form for File Uploads -->
+
+
+                        <form id="timetable-form">
+                            <div class="input-group">
+                                <label for="courses-file">Courses / Subjects (.csv)</label>
+                                <input type="file" id="courses-file" name="courses_file" accept=".csv" required>
+                                <span class="upload-status"></span> <!-- This is for our checkmark -->
+                            </div>
+
+                            <div class="input-group">
+                                <label for="faculty-file">Faculty & Their Subjects (.csv)</label>
+                                <input type="file" id="faculty-file" name="faculty_file" accept=".csv" required>
+                                <span class="upload-status"></span> <!-- This is for our checkmark -->
+                            </div>
+
+                            <div class="input-group">
+                                <label for="rooms-file">Rooms & Labs (.csv)</label>
+                                <input type="file" id="rooms-file" name="rooms_file" accept=".csv" required>
+                                <span class="upload-status"></span> <!-- This is for our checkmark -->
+                            </div>
+
+                            <button type="submit" class="cta-button">Generate Timetables</button>
+                        </form>
+
+                    </div>
+                    <div class="output-section">
+                        <h3>2. Choose the Best Timetable</h3>
+                        <!-- This view will show the three option cards -->
+                        <div id="option-selection-view">
+                            <p>Generated timetable options will appear here.</p>
+                        </div>
+
+                        <!-- This view will be hidden by default and will show the selected timetable -->
+                        <div id="detailed-timetable-view" class="hidden">
+                            <!-- The selected timetable table will be injected here by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+
+</html>
